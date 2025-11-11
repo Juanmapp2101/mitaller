@@ -36,6 +36,14 @@ export default function Vehiculo({ vehiculo }) {
   if (!acceso) {
     return (
       <div style={{ padding: 40, fontFamily: "sans-serif" }}>
+      <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+  <img 
+    src="/logo.png" 
+    alt="Logo del taller" 
+    style={{ width: '250px', maxWidth: '80%' }}
+  />
+</div>
+
         <h2>Acceso al estado de su reparación</h2>
         <p>Matrícula: <strong>{vehiculo.matricula}</strong></p>
         <form onSubmit={verificarPassword}>
