@@ -30,8 +30,17 @@ export default function Vehiculo({ vehiculo }) {
   };
 
   if (!vehiculo) {
-    return <p>Vehículo no encontrado</p>;
-  }
+  return (
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <img
+        src="/logo.png"
+        alt="Logo del taller"
+        style={{ width: '220px', marginBottom: '20px' }}
+      />
+      <p>Vehículo no encontrado</p>
+    </div>
+  );
+}
 
   if (!acceso) {
     return (
@@ -61,14 +70,19 @@ export default function Vehiculo({ vehiculo }) {
     );
   }
 
-  return (
-    <div style={{ padding: 40, fontFamily: "sans-serif" }}>
-      <h2>Estado de reparación</h2>
-      <p><strong>Matrícula:</strong> {vehiculo.matricula}</p>
-      <p><strong>Última actualización:</strong> {vehiculo.fecha_actualizacion}</p>
-      <p><strong>Estado:</strong> {vehiculo.estado}</p>
-    </div>
-  );
+ return (
+  <div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'sans-serif' }}>
+    <img
+      src="/logo.png"
+      alt="Logo del taller"
+      style={{ width: '220px', marginBottom: '30px' }}
+    />
+    <h1>Estado de reparación</h1>
+    <p><strong>Matrícula:</strong> {vehiculo.matricula}</p>
+    <p><strong>Última actualización:</strong> {vehiculo.fecha_actualizacion}</p>
+    <p><strong>Estado:</strong> {vehiculo.estado}</p>
+  </div>
+);
 }
 
 export async function getServerSideProps({ params }) {
