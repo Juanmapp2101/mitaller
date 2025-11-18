@@ -1,0 +1,4 @@
+matricula,fecha_actualizacion,estado,telefono,password,password_hash
+1234ABC,10/11/2025,En reparaci�n,600123456,23456,$2b$10$UreSosjCIeagtuYxp1F2ZeWEf/6AvVHqEArAZeaS3ZqmSIazrdXEu
+5678DEF,09/11/2025,Reparado,622987654,87654,$2b$10$0puIc.gW9yD4.CQK18gKdePNSRmzTzHk3gBfuj8tvAHaUXctB71iS
+1111SSS,01/12/2025,pendiente pieza,666666666,66666,$2b$10$N02tEt9VRsDQG5EZbPoJze4b.Jtwmtf5LnovEFJ6/o1HNjczqoq8W
